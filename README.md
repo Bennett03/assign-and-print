@@ -5,7 +5,6 @@ In this quick exercise, you will use the what we learned in the previous lesson 
 You may [refer to Monday's lecture notes](https://github.com/allegheny-college-cmpsc-100-fall-2023/course-materials/blob/main/lecture-content/variables-getting-started-9-4-23.md) to complete the exercise. However, I would advise against copy-pasting, so your fingers can start to build muscle memory. 
 
 ## Instructions 
-### Quick tip: right-click links and open in a new tab, so that you still have this tab open for reference! 
 
 1. Sign in to your [trinket.io](https://trinket.io/) account
 2. Create a new Python trinket by clicking the dropdown by your username on the top right then New Trinket>Python
