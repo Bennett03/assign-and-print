@@ -1,2 +1,0 @@
-cat="hepzibah"
-print(cat)
