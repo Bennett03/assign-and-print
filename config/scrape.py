@@ -13,18 +13,26 @@ import sys
 file = open('LINK.md', 'r')
 file = file.read()
 #get all urls from file
-url = re.search('trinket.io/python/.*', file).group(0)
+url = re.search('trinket.io/.*', file).group(0)
 #if url contains paren, remove it and all characters after it
 if ')' in url:
     url = url[:url.index(')')]
-print(url)
+
+#if url contains ], remove it and all characters after it
+if ']' in url:
+    url = url[:url.index(']')]
+
+#if url format is https://trinket.io/library/trinkets/*, cnage it to https://trinket.io/python/*
+if 'library/trinkets' in url:
+    url = url.replace('library/trinkets', 'python')
+
 
 #if last character in url is not alphanumeric, remove it
 if not url[-1].isalnum():
     url = url[:-1]
 
 #format url to embed link so python from editor can be scraped
-#insert "embed/" between "trinket.io/" and "glowscript/"
+#insert "embed/" between "trinket.io/" and "python /"
 url = 'https://' + url[:11] + "embed/" + url[11:]
 print(url)
 
