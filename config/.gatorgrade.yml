@@ -1,0 +1,19 @@
+- ./:
+    - LINK.md:
+        - description: Add Trinket link to LINK.md
+          check: MatchFileFragment
+          options:
+            fragment: trinket.io
+            count: 1
+    - main.py:
+        - description: Declare, assign, and print a variable
+          check: MatchFileRegex
+          options:
+            regex: (\w+)\s*=\s*(.*)\s*print\((.*)\)
+            count: 1
+        - description: Include a print statement
+          check: MatchFileFragment
+          options:
+            fragment: print
+            count: 1
+     
