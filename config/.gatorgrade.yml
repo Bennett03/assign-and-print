@@ -6,14 +6,19 @@
             fragment: trinket.io
             count: 1
     - main.py:
-        - description: Declare, assign, and print a variable
+        - description: Declare a variable and assign it a value
           check: MatchFileRegex
           options:
-            regex: (\w+)\s*=\s*(.*)\s*print\((.*)\)
+            regex: (\w+)\s*=\s*(.*)
             count: 1
         - description: Include a print statement
           check: MatchFileFragment
           options:
             fragment: print
+            count: 1
+        - description: Print statement contains a variable and nothing else 
+          check: MatchFileRegex
+          options:
+            regex: print\((\w+)\)
             count: 1
      
