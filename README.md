@@ -11,4 +11,4 @@ You may [refer to Monday's lecture notes](https://github.com/allegheny-college-c
 2. Create a new Python trinket by clicking the dropdown by your username on the top right then New Trinket>Python
 3. Write a program that declares a variable, assigns it a value, and prints it out. That's it! 
 4. Save your work, and either copy your link directly from the URL bar or use the link-share tree to the left of the Save button. 
-5. Paste your link from step 4 into link.md and commit your changes. 
+5. Paste your link from step 4 into LINK.md and commit your changes. 
