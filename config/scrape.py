@@ -10,10 +10,14 @@ import sys
 #get url from README.md
 
 
-readme = open('LINK.md', 'r')
-readme = readme.read()
-print(readme)
-url = re.search('trinket.io/python/.*', readme).group(0)
+file = open('LINK.md', 'r')
+file = file.read()
+#get all urls from file
+url = re.search('trinket.io/python/.*', file).group(0)
+#if url contains paren, remove it and all characters after it
+if ')' in url:
+    url = url[:url.index(')')]
+print(url)
 
 #if last character in url is not alphanumeric, remove it
 if not url[-1].isalnum():
