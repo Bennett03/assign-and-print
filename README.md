@@ -1,6 +1,6 @@
 # Assign and a print a variable
 
-In this quick exercise, you will use hte what we learned in the previous lesson to assign and print a variable. 
+In this quick exercise, you will use the what we learned in the previous lesson to assign and print a variable. 
 
 You may [refer to Monday's lecture notes](https://github.com/allegheny-college-cmpsc-100-fall-2023/course-materials/blob/main/lecture-content/variables-getting-started-9-4-23.md) to complete the exercise. However, I would advise against copy-pasting, so your fingers can start to build muscle memory. 
 
