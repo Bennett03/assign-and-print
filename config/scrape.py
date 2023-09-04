@@ -49,9 +49,3 @@ f = open("main.py", "w")
 f.write(str(python))
 f.close()
 
-#regex for declaring a variable
-def declareVar():
-    return re.compile(r'(\w+)\s*=\s*(.*)')
-
-def declareAndPrintVar(): 
-    return re.compile(r'(\w+)\s*=\s*(.*)\s*print\((.*)\)')
